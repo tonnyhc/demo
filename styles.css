@@ -1,0 +1,99 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main {
+  background-image: url(https://convars.com/imgs/bga_en.png?2);
+  background-position: center;
+  height: 100vh;
+}
+
+.cases-content-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #456;
+  color: white;
+  padding: 15px 10px;
+  box-shadow: 0px 0px 16px #0006;
+}
+
+.welcome-msg {
+  font-weight: 500;
+}
+
+.cases-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid white;
+  padding: 10px 6px 0 6px;
+  gap: 9px;
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+.case-card {
+  max-height: 75px;
+  display: flex;
+  box-shadow: 0px 0px 4px #000c;
+  padding: 4px;
+  background-position-x: 160%;
+  background-size: 300%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.rarity-common {
+  background-image: linear-gradient(45deg, #9996, #999c, #fff3);
+}
+.rarity-rare {
+  background-image: linear-gradient(45deg, #2426, #242c, #fff3);
+}
+.rarity-epic {
+  background-image: linear-gradient(45deg, #2276, #227c, #fff3);
+}
+.rarity-legendary {
+  background-image: linear-gradient(45deg, #7626, #762c, #fff3);
+}
+
+.case-img-wrapper {
+  height: 100%;
+  width: 30%;
+}
+.case-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.case-description {
+  width: 70%;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+}
+.case-price {
+  color: #cccccc;
+}
+
+.case-title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.case-card:hover {
+  background-position-x: 250%;
+}
+
+.case-card:hover img {
+  filter: drop-shadow(0px 0px 8px #fff6);
+}
